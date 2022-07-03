@@ -1,13 +1,13 @@
 package com.luv2code.springmvc.repository;
 
-import com.luv2code.springmvc.models.ScienceGrade;
+import com.luv2code.springmvc.models.HistoryGrade;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ScienceGradesDao extends CrudRepository<ScienceGrade, Integer> {
+public interface HistoryGradesDao extends CrudRepository<HistoryGrade, Integer> {
 
-    public Iterable<ScienceGrade> findGradeByStudentId(int id);
+    Iterable<HistoryGrade> findGradeByStudentId(int id);
 
     public void deleteByStudentId(int id);
 

@@ -9,4 +9,7 @@ public interface MathGradesDao extends CrudRepository<MathGrade, Integer> {
 
      Iterable<MathGrade> findGradeByStudentId(int id);
 
+     public void deleteByStudentId(int id);
+
+
 }
